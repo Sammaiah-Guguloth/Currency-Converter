@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="app-container">
+        <h2>Currency Converter</h2>
+        
+        <form>
+            <div class="input flex-col">
+                <span>Enter Amount</span>
+                <input type="text" id="amount-inp">
+
+            </div>
+
+            <div class="country-info flex-row">
+                <div class="from flex-col">
+                    <span>From</span>
+                    <div class="country">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="" id="from-img">
+                        <select name="from" id="from">
+                            <!-- <option value="INR">IN</option>
+                            <option value="AUD">AU</option>
+                            <option value="USD">US</option> -->
+                        </select>
+                    </div>
+                </div>
+    
+                <i class="fa-solid fa-right-left"></i>
+
+                <div class="to flex-col">
+                    <span>To</span>
+                    <div class="country">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="" id="to-flag">
+                        <select name="to" id="to">
+                            <!-- <option value="INR">IN</option>
+                            <option value="AUD">AU</option>
+                            <option value="USD">US</option> -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p></p>
+            </div>
+
+            <button id="convert-btn">Convert</button>
+        </form>
+
+
+    </div>
+
+    <script src="codes.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow:none;
+}
+
+body {
+    background-color: #f4e4ba;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    min-height: 100vh;
+}
+
+.app-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 2rem;
+    padding: 1.5rem 2.5rem;
+    min-width: 320px;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 10rem;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.country-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.1rem;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.app-container h2 {
+    font-size: 2rem;
+}
+
+#amount-inp {
+    padding: 0.8rem 0.5rem;
+    border: 0.7px solid grey;
+    border-radius: 7px;
+    outline: none;
+    font-size: 1rem;
+    color: rgb(50, 48, 48);
+    margin-top: 0.4rem;
+}
+
+.country {
+    display: flex;
+    gap: 4px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.country img {
+    width:2rem;
+}
+
+select {
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+.info-box {
+    text-align: center;
+}
+
+#convert-btn {
+    padding: 11px ;
+    font-size: 1.25rem;
+    color: white;
+    background-color: #af4d98;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
