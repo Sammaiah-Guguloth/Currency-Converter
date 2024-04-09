@@ -22,7 +22,7 @@ Welcome to the Currency Converter website! This website was built as a practice 
 3. **Convert**: Click on the "Convert" button to see the converted amount.
 4. **Real-time Rates**: The exchange rates are automatically fetched and updated in real-time, ensuring accuracy.
 
-# GITHUB-Pages
+### GITHUB-Pages
 You can view the website live on GitHub Pages: https://sammaiah-guguloth.github.io/Currency-Converter/
 
 ## Credits
