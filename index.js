@@ -4,6 +4,7 @@ const CURR_URL = "https://v6.exchangerate-api.com/v6/5840a1504758a7f7681f5568/la
 
 const dropDowns = document.querySelectorAll('select');
 const convertBtn = document.querySelector('#convert-btn');
+const appContainer = document.querySelector(".app-container")
 
 
 for(let select of dropDowns) {
@@ -31,6 +32,15 @@ for(let select of dropDowns) {
 }
 
 async function calcCurrency() {
+
+    let loader = document.createElement('div');
+    loader.classList.add('loader');
+    appContainer.append(loader);
+
+    let cover = document.createElement('div');
+    cover.classList.add('cover');
+    appContainer.append(cover);
+
     let fromCurr = document.querySelector('#from').value;
     let toCurr = document.querySelector("#to").value;
     let amount = document.querySelector('#amount-inp').value;
@@ -42,6 +52,9 @@ async function calcCurrency() {
     let totalAmount = conversionRates[toCurr] * amount;
     totalAmount = totalAmount.toFixed(3);
     
+    loader.remove();
+    cover.remove()
+
     display(fromCurr , toCurr , amount , totalAmount );
 }
 
